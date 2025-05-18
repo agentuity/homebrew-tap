@@ -5,21 +5,21 @@
 class Agentuity < Formula
   desc "Tooling for the Agentuity Agent Cloud Platform"
   homepage "https://agentuity.com"
-  version "0.0.124"
+  version "0.0.125"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentuity/cli/releases/download/v0.0.124/agentuity_Darwin_x86_64.tar.gz"
-      sha256 "45a5886a3536947d9412f3ed325fac9ebfa70fbabbe60dd8af632d4d881cc77a"
+      url "https://github.com/agentuity/cli/releases/download/v0.0.125/agentuity_Darwin_x86_64.tar.gz"
+      sha256 "b84ad9a2a1f807ba7d70a19fdc6162a98f43144c29461245d2b0454072f3ecf1"
 
       def install
         bin.install "agentuity"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentuity/cli/releases/download/v0.0.124/agentuity_Darwin_arm64.tar.gz"
-      sha256 "c150b84775e879788a08a8f968ec62dbc43d34caf1d6b42b50d7e19606c3c4da"
+      url "https://github.com/agentuity/cli/releases/download/v0.0.125/agentuity_Darwin_arm64.tar.gz"
+      sha256 "8054327bbab5f06843c256614bea044fe4df618ef614d6ed90083393f28134fb"
 
       def install
         bin.install "agentuity"
@@ -29,15 +29,15 @@ class Agentuity < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/agentuity/cli/releases/download/v0.0.124/agentuity_Linux_x86_64.tar.gz"
-      sha256 "311f98dd1053214e75eee33c48c30b1e2c61e1f7888dca106e35eb30cbfab3fc"
+      url "https://github.com/agentuity/cli/releases/download/v0.0.125/agentuity_Linux_x86_64.tar.gz"
+      sha256 "b845faeec65edc154ea03ba8e209a178dbb46787c639a05a9a21b62ce86ae5a7"
       def install
         bin.install "agentuity"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/agentuity/cli/releases/download/v0.0.124/agentuity_Linux_arm64.tar.gz"
-      sha256 "d6b4277638a65804d276670fdcc703af63511a6d10e39308893ea9635283f835"
+      url "https://github.com/agentuity/cli/releases/download/v0.0.125/agentuity_Linux_arm64.tar.gz"
+      sha256 "3a19312a2cde47ef70d8853cfeb2461b268d5e3c89ed0bdbbb2d425ffaab5ac9"
       def install
         bin.install "agentuity"
       end
